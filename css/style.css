@@ -4,10 +4,22 @@ body {
 	padding: 0;
 	font-family: "Arial";
 	font-size: 1em;
+	background: 
+radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent),
+radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent) 50px 50px,
+linear-gradient(#A8B1BB 1px, transparent 1px) 0 0,
+linear-gradient(90deg, #A8B1BB 1px, transparent 1px) 0 0;
+background-color: slategray;
+background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }
 
 #main {
-	margin-top: 30%;
+}
+
+#cust_line {
+	position: absolute;
+	width: 100%;
+	bottom: 22%;
 }
 
 .customer {
@@ -22,10 +34,10 @@ body {
 	position: absolute;
 	background: #eee;
 	border-radius: .5em;
-	width: 70%;
+	width: 60%;
 	height: 10em;
 	top: -11em;
-	left: 15%;
+	left: 20%;
 }
 
 .order_box:before {
@@ -52,8 +64,14 @@ body {
 	justify-content: center;
 	font-size: 1.2em;
 	background: no-repeat center;
-	background-size: 30%
+	background-size: 15%
 }
 
-
-
+.table {
+	display: table;
+	width: 100%;
+	background: #5E3914;
+	position: absolute;
+	bottom: 0;
+	height: 25%;
+}

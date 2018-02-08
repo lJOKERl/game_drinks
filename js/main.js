@@ -20,11 +20,10 @@ function getCustomers(argument) {
 
 		div.className = "customer";
 		order.className = "order_box";
-		main.appendChild(div);
+		cust_line.appendChild(div);
 		div.appendChild(img);
 		div.appendChild(order);
 		order.appendChild(span);
-		console.log(getNumber(menu));
 		span.style.backgroundImage = "url('"+ getNumber(menu) +"')";
 
 		img.src = "images/" + getNumber(customers) + ".png";
